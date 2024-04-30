@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{3B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameHub.GomokuEngine", "services\GomokuEngine\GameHub.GomokuEngine.csproj", "{94C9AF47-2AC8-4191-A502-A7A53EAF7028}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameHub.GomokuEngine.Tests", "services\GomokuEngine.Tests\GameHub.GomokuEngine.Tests.csproj", "{7F6EAE95-769A-478E-ABE3-BCF636D4661B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,8 +28,13 @@ Global
 		{94C9AF47-2AC8-4191-A502-A7A53EAF7028}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94C9AF47-2AC8-4191-A502-A7A53EAF7028}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94C9AF47-2AC8-4191-A502-A7A53EAF7028}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F6EAE95-769A-478E-ABE3-BCF636D4661B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F6EAE95-769A-478E-ABE3-BCF636D4661B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F6EAE95-769A-478E-ABE3-BCF636D4661B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F6EAE95-769A-478E-ABE3-BCF636D4661B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{94C9AF47-2AC8-4191-A502-A7A53EAF7028} = {3B8610B9-648A-437A-A4A8-0DB62AC58D40}
+		{7F6EAE95-769A-478E-ABE3-BCF636D4661B} = {3B8610B9-648A-437A-A4A8-0DB62AC58D40}
 	EndGlobalSection
 EndGlobal

@@ -16,7 +16,10 @@ public class GomokuHub(GomokuManager gomokuManager) : Hub
 
   public async Task GetPublicGames()
   {
-    var games = _gomokuManager.GetGames().Where(g => g.IsPublic).ToList();
+    var games = _gomokuManager.GetGames()
+                              .Where(g => g.IsPublic && g.Players.Count == 1)
+                              .Select(g => new { id = g.Id, player = g.Players[0].Name})
+                              .ToList();
     await Clients.Caller.SendAsync("PublicGames", games);
   }
 

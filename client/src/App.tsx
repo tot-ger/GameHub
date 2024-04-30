@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Routes, Route, useNavigate, useParams } from "react-router-dom";
+import { Routes, Route, Outlet, useNavigate, useParams } from "react-router-dom";
 
 type GameInfo = {
   id: string;
@@ -9,10 +9,20 @@ type GameInfo = {
 function App() {
   return (
     <Routes>
-      <Route index element={<Home />} />
-      <Route path="lobby" element={<Lobby />} />
-      <Route path="game/:id" element={<Game />} />
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="lobby" element={<Lobby />} />
+        <Route path="game/:id" element={<Game />} />
+      </Route>
     </Routes>
+  )
+}
+
+function Layout() {
+  return (
+    <div>
+      <Outlet />
+    </div>
   )
 }
 
